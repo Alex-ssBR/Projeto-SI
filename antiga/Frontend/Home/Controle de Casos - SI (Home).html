@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Casos - SI</title>
+  <link rel="stylesheet" href="Controle de Casos - SI (CSS-Home).css">
+  <script defer src="Controle de Casos - SI (JS-Home).js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../logo_santaisabel.png" alt="Logo Diretoria de TI" />
+      <h1>Controle de Casos - SI</h1>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="campoBusca" placeholder="Buscar caso ou número de patrimônio..." />
+      <button id="botaoBusca" title="Pesquisar">🔍</button>
+      <button id="botaoCriarCaso" class="criar-caso">+ Criar Caso</button>
+    </div>
+
+  </header>
+
+  <!-- Janela lateral - ATUALIZADA PARA O CHAT -->
+  <aside class="janela-lateral">
+    <h2>Avisos e Atualizações</h2>
+    <div id="avisos-container" class="avisos-container">
+      <!-- Mensagens de avisos serão inseridas aqui pelo JS -->
+      <!-- A mensagem "* Nenhum aviso no momento *" será adicionada pelo JS se não houver avisos -->
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="campoMensagem" placeholder="Digite seu aviso...">
+      <button id="enviarMensagemBtn">Enviar</button>
+    </div>
+  </aside>
+
+  <!-- Lista de casos -->
+  <main class="conteudo">
+    <h2>Casos Registrados</h2>
+    <ul id="listaCasos">
+      <!-- Casos serão adicionados aqui via JavaScript -->
+    </ul>
+  </main>
+
+  <!-- POP-UP -->
+  <div id="popupCaso" class="popup">
+    <div class="popup-content">
+      <span id="fecharPopup" class="fechar">&times;</span>
+      <h2 id="popupTitle">Abertura de Caso</h2>
+
+      <form id="formCaso">
+        <label>Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label>Ramal:</label>
+        <input type="text" id="ramal">
+
+        <label>Secretaria:</label>
+        <input type="text" id="secretaria">
+
+        <label>Departamento:</label>
+        <input type="text" id="departamento">
+
+        <label>Nº Patrimônio:</label>
+        <input type="text" id="patrimonio">
+
+        <label>Problema:</label>
+        <textarea id="problema" rows="3"></textarea>
+
+        <label>Solução:</label>
+        <textarea id="solucao" rows="3"></textarea>
+
+        <div class="popup-buttons">
+          <button type="button" class="salvar" id="salvarCasoBtn">Salvar Caso</button>
+          <button type="submit" class="salvar finalizar" id="finalizarCasoBtn">Finalizar Caso</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

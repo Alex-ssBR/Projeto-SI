@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Controle de Casos SI</title>
+  <link rel="stylesheet" href="Controle de Casos - SI (CSS-Login).css">
+  <script defer src="Controle de Casos - SI (JS-Login).js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="../logo_santaisabel.png" alt="Logo Diretoria de TI" class="login-logo"/>
+      <h2>Controle de Casos - SI</h2>
+      <p>Acesse sua conta</p>
+      
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit" class="login-button">Entrar</button>
+        
+        <p id="errorMessage" class="error-message"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
